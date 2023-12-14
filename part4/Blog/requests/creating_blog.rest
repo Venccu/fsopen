@@ -1,0 +1,29 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15dXNlciIsImlkIjoiNjU3OTk1N2Q4ZDMyMWNlZTU3ZDczZThjIiwiaWF0IjoxNzAyNDY4MTI4fQ.S4Nzd5h4kDGwC0X3DZzCYWCbNFnMwGNnEY4jOjO4uI8
+
+{
+  "title": "Test User Extractor",
+  "author": "Author",
+  "url": "www.test.com",
+  "likes": 9
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "React patterns",
+  "author": "Michael Chan",
+  "url": "https://reactpatterns.com/",
+  "likes": 7
+}
+
+### 
+PUT http://localhost:3003/api/blogs/65795fc800b79cd7d2b43f2a
+Content-Type: application/json
+
+{
+  "title": "Updated title"
+}
