@@ -1,0 +1,44 @@
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "myuser",
+  "password": "secret"
+}
+
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "myuser2",
+  "password": "secret2"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15dXNlciIsImlkIjoiNjU3YWQ4Yzk1MDY4NDRmNTlhZGFiNGYyIiwiaWF0IjoxNzAyNTYzMDYzfQ.eC_IfX27O4gJDnxH_hXub-Tk4eVBfEUBXgxzjNq9laA
+
+{
+  "title": "Test blog 3",
+  "author": "John Doe",
+  "url": "www.test.com",
+  "likes": 9
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15dXNlcjIiLCJpZCI6IjY1N2FkOGNiNTA2ODQ0ZjU5YWRhYjRmNiIsImlhdCI6MTcwMjU0OTgyN30.8_NzmXFd6rALjX1793AexQTHS2H49ihSHsgLaEmDQuU
+
+{
+  "title": "Test blog 4",
+  "author": "Author",
+  "url": "www.test.com",
+  "likes": 9
+}
+
+###
+DELETE http://localhost:3003/api/blogs/657ad913506844f59adab4fc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im15dXNlcjIiLCJpZCI6IjY1N2FkOGNiNTA2ODQ0ZjU5YWRhYjRmNiIsImlhdCI6MTcwMjU0OTgyN30.8_NzmXFd6rALjX1793AexQTHS2H49ihSHsgLaEmDQuU

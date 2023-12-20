@@ -1,0 +1,33 @@
+h1 {
+    color: black;
+    font-style: italic;
+  }
+  
+  .note {
+    color: green;
+    background: lightgrey;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .error {
+    color: red;
+    background: lightgrey;
+    font-size: 20px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .blog {
+    padding: 10px;
+    margin-top: 2px;
+    border-style: 'solid';
+    border: 1px solid black;
+    border-radius: 1px;
+    margin-bottom: 5px;
+  }
